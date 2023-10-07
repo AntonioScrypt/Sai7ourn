@@ -3,6 +3,7 @@ package ani.saikou.parsers.anime.extractors
 import ani.saikou.FileUrl
 import ani.saikou.client
 import ani.saikou.getSize
+import ani.saikou.logger
 import ani.saikou.parsers.anime.Video
 import ani.saikou.parsers.anime.VideoContainer
 import ani.saikou.parsers.anime.VideoExtractor
@@ -15,6 +16,7 @@ class Mp4Upload(override val server: VideoServer) : VideoExtractor() {
             .select("script").html()
             .substringAfter("src: \"").substringBefore("\"")
         val host = link.substringAfter("https://").substringBefore("/")
+        logger("LOGMP4UP "+host)
         val file = FileUrl(link, mapOf("host" to host))
         return VideoContainer(
             listOf(Video(null, VideoType.CONTAINER, file, getSize(file)))

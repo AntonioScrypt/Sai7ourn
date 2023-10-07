@@ -9,18 +9,11 @@ import ani.saikou.parsers.anime.VideoServer
 
 class GOGOAnime : AnimeParser() {
 
-    /*
-    override val name = "JkAnime"
-    override val saveName = "anime_jkanime"
-    override val hostUrl = "https://jkanime.net/"
-    override val isDubAvailableSeparately = false
-    */
-
     override val name = "Gogo"
     override val saveName = "gogo_anime_hu"
     override val hostUrl = "https://gogoanime.hu"
     override val malSyncBackupName = "Gogoanime"
-    override val isDubAvailableSeparately = true
+    override val isDubAvailableSeparately = false
 
     override suspend fun loadEpisodes(
         animeLink: String,
