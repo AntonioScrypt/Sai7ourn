@@ -5,12 +5,14 @@ import ani.saikou.lazyList
 import ani.saikou.parsers.BaseParser
 import ani.saikou.parsers.WatchSources
 import ani.saikou.parsers.anime.sources.GOGOAnime
+import ani.saikou.parsers.anime.sources.JKAnime
 import ani.saikou.parsers.anime.sources.MonosChinos
-
 object AnimeSources : WatchSources() {
     override val list: List<Lazier<BaseParser>> = lazyList(
-        "GOGO" to ::GOGOAnime,
+        "JKANIME" to :: JKAnime,
         "MONOSCHINOS" to :: MonosChinos,
+        "GOGO" to ::GOGOAnime,
+
     )
 }
 
