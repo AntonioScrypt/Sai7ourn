@@ -13,7 +13,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.animation.AnticipateInterpolator
 import android.widget.TextView
-import android.widget.Toast
 import androidx.activity.addCallback
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
@@ -214,12 +213,6 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-        hello()
-
-    }
-
-    private fun hello(){
-        Toast.makeText(this, "hello :)", Toast.LENGTH_SHORT).show()
     }
 
     //ViewPager
