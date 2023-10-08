@@ -3,11 +3,11 @@
         <item name="android:navigationBarColor">@android:color/transparent</item>
         <item name="android:statusBarColor">@color/status</item>
 
-        <item name="colorPrimary">@color/pink_500</item>
-        <item name="colorPrimaryVariant">@color/pink_700</item>
-        <item name="colorOnPrimary">@color/bg_white</item>
-        <item name="colorSecondary">@color/violet_400</item>
-        <item name="colorSecondaryVariant">@color/violet_700</item>
+        <item name="colorPrimary">@color/middle_purple</item>
+        <item name="colorPrimaryVariant">@color/kobi</item>
+        <item name="colorOnPrimary">@color/lavender_blush</item>
+        <item name="colorSecondary">@color/middle_blue_purple</item>
+        <item name="colorSecondaryVariant">@color/topaz</item>
         <item name="colorOnSecondary">@color/bg_black</item>
         <item name="colorSecondaryContainer">?attr/colorSecondary</item>
         <item name="colorOnSecondaryContainer">?attr/colorOnSecondary</item>

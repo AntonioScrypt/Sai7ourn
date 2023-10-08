@@ -32,12 +32,13 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:layout_marginBottom="110dp"
+        android:layout_gravity="center_vertical"
         android:clipChildren="false"
         android:clipToPadding="false"
         android:orientation="vertical"
-        android:padding="24dp">
+        android:paddingHorizontal="24dp"
+        android:paddingTop="24dp"
+        android:paddingBottom="95dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -79,7 +80,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom|end"
                         android:background="@drawable/item_score"
-                        android:backgroundTint="#BFFFFFFF"
+                        android:backgroundTint="?attr/colorPrimary"
                         android:backgroundTintMode="multiply"
                         android:orientation="horizontal"
                         android:paddingStart="8dp"
@@ -140,9 +141,8 @@
                     android:ellipsize="end"
                     android:fontFamily="@font/poppins_bold"
                     android:maxLines="3"
-                    android:textSize="16dp"
+                    android:textSize="16sp"
                     android:transitionName="mediaTitle"
-                    tools:ignore="SpUsage"
                     tools:text="@string/slogan" />
 
                 <TextView
@@ -157,7 +157,7 @@
                     android:singleLine="true"
                     android:text="@string/status"
                     android:textColor="?attr/colorPrimary"
-                    android:textSize="14dp"
+                    android:textSize="14sp"
                     tools:ignore="SpUsage,TextContrastCheck" />
 
             </LinearLayout>
@@ -179,8 +179,7 @@
                     android:id="@+id/itemCompactTotal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="14dp"
-                    tools:ignore="SpUsage"
+                    android:textSize="14sp"
                     tools:text="100" />
 
                 <TextView
@@ -191,8 +190,7 @@
                     android:ellipsize="end"
                     android:singleLine="true"
                     android:text="@string/eps"
-                    android:textSize="14dp"
-                    tools:ignore="SpUsage" />
+                    android:textSize="14sp" />
 
             </LinearLayout>
 
@@ -206,9 +204,8 @@
                 android:ellipsize="end"
                 android:maxLines="1"
                 android:textAlignment="viewEnd"
-                android:textSize="14dp"
+                android:textSize="14sp"
                 android:transitionName="mediaTitle"
-                tools:ignore="SpUsage"
                 tools:text="@string/genres" />
         </LinearLayout>
 

@@ -7,28 +7,24 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.animation.LayoutAnimationController
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.updateLayoutParams
-import androidx.core.view.updatePadding
 import androidx.lifecycle.MutableLiveData
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
-import ani.saikou.media.GenreActivity
 import ani.saikou.MediaPageTransformer
 import ani.saikou.connections.anilist.Anilist
 import ani.saikou.databinding.ItemAnimePageBinding
 import ani.saikou.loadData
 import ani.saikou.loadImage
 import ani.saikou.media.CalendarActivity
+import ani.saikou.media.GenreActivity
 import ani.saikou.media.MediaAdaptor
-import ani.saikou.media.SearchActivity
 import ani.saikou.px
 import ani.saikou.setSafeOnClickListener
 import ani.saikou.setSlideIn
 import ani.saikou.setSlideUp
-import ani.saikou.settings.SettingsDialogFragment
 import ani.saikou.settings.UserInterfaceSettings
 import ani.saikou.statusBarHeight
 
@@ -49,30 +45,30 @@ class AnimePageAdapter : RecyclerView.Adapter<AnimePageAdapter.AnimePageViewHold
         binding = holder.binding
         trendingViewPager = binding.animeTrendingViewPager
 
-        binding.animeTitleContainer.updatePadding(top = statusBarHeight)
+        //binding.animeTitleContainer.updatePadding(top = statusBarHeight)
 
         if (uiSettings.smallView) binding.animeTrendingContainer.updateLayoutParams<ViewGroup.MarginLayoutParams> {
             bottomMargin = (-108f).px
         }
 
-        updateAvatar()
+        //updateAvatar()
 
-        binding.animeSearchBar.hint = "ANIME"
-        binding.animeSearchBarText.setOnClickListener {
-            ContextCompat.startActivity(
-                it.context,
-                Intent(it.context, SearchActivity::class.java).putExtra("type", "ANIME"),
-                null
-            )
-        }
+//        binding.animeSearchBar.hint = "ANIME"
+//        binding.animeSearchBarText.setOnClickListener {
+//            ContextCompat.startActivity(
+//                it.context,
+//                Intent(it.context, SearchActivity::class.java).putExtra("type", "ANIME"),
+//                null
+//            )
+//        }
+//
+//        binding.animeSearchBar.setEndIconOnClickListener {
+//            binding.animeSearchBarText.performClick()
+//        }
 
-        binding.animeSearchBar.setEndIconOnClickListener {
-            binding.animeSearchBarText.performClick()
-        }
-
-        binding.animeUserAvatar.setSafeOnClickListener {
-            SettingsDialogFragment().show((it.context as AppCompatActivity).supportFragmentManager, "dialog")
-        }
+//        binding.animeUserAvatar.setSafeOnClickListener {
+//            SettingsDialogFragment().show((it.context as AppCompatActivity).supportFragmentManager, "dialog")
+//        }
 
         listOf(
             binding.animePreviousSeason,
@@ -135,13 +131,13 @@ class AnimePageAdapter : RecyclerView.Adapter<AnimePageAdapter.AnimePageViewHold
                 override fun onPageSelected(position: Int) {
                     super.onPageSelected(position)
                     trendHandler!!.removeCallbacks(trendRun)
-                    trendHandler!!.postDelayed(trendRun, 4000)
+                    trendHandler!!.postDelayed(trendRun, 10000)
                 }
             }
         )
 
         binding.animeTrendingViewPager.layoutAnimation = LayoutAnimationController(setSlideIn(uiSettings), 0.25f)
-        binding.animeTitleContainer.startAnimation(setSlideUp(uiSettings))
+        //binding.animeTitleContainer.startAnimation(setSlideUp(uiSettings))
         binding.animeListContainer.layoutAnimation = LayoutAnimationController(setSlideIn(uiSettings), 0.25f)
         binding.animeSeasonsCont.layoutAnimation = LayoutAnimationController(setSlideIn(uiSettings), 0.25f)
     }
@@ -160,11 +156,11 @@ class AnimePageAdapter : RecyclerView.Adapter<AnimePageAdapter.AnimePageViewHold
         binding.animePopular.startAnimation(setSlideUp(uiSettings))
     }
 
-    fun updateAvatar() {
-        if (Anilist.avatar != null && ready.value == true) {
-            binding.animeUserAvatar.loadImage(Anilist.avatar)
-        }
-    }
+//    fun updateAvatar() {
+//        if (Anilist.avatar != null && ready.value == true) {
+//            binding.animeUserAvatar.loadImage(Anilist.avatar)
+//        }
+//    }
 
     inner class AnimePageViewHolder(val binding: ItemAnimePageBinding) : RecyclerView.ViewHolder(binding.root)
 }

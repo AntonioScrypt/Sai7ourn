@@ -25,7 +25,6 @@ import ani.saikou.bottomBar
 import ani.saikou.connections.anilist.Anilist
 import ani.saikou.connections.anilist.AnilistAnimeViewModel
 import ani.saikou.connections.anilist.SearchResults
-import ani.saikou.connections.anilist.getUserId
 import ani.saikou.databinding.FragmentAnimeBinding
 import ani.saikou.loadData
 import ani.saikou.media.MediaAdaptor
@@ -93,6 +92,9 @@ class AnimeFragment : Fragment() {
         }
 
         binding.animePageRecyclerView.updatePaddingRelative(bottom = navBarHeight + 160f.px)
+
+
+
 
         val animePageAdapter = AnimePageAdapter()
 
@@ -220,7 +222,7 @@ class AnimeFragment : Fragment() {
                                     viewPager = animePageAdapter.trendingViewPager
                                 )
                             )
-                            animePageAdapter.updateAvatar()
+                            //animePageAdapter.updateAvatar()
                         }
                     }
                 }
@@ -228,10 +230,27 @@ class AnimeFragment : Fragment() {
             }
         }
 
+//        fun load() = scope.launch(Dispatchers.Main) {
+//            animePageAdapter.updateAvatar()
+//        }
 
-        fun load() = scope.launch(Dispatchers.Main) {
-            animePageAdapter.updateAvatar()
+        binding.animeSearchBar.hint = "ANIME"
+        binding.animeSearchBar.translationY = -(navBarHeight + bottomBar.height + bottomBar.marginBottom).toFloat()
+
+        binding.animeSearchBarText.setOnClickListener {
+            ContextCompat.startActivity(
+                it.context,
+                Intent(it.context, SearchActivity::class.java).putExtra("type", "ANIME"),
+                null
+            )
         }
+
+        binding.animeSearchBar.setEndIconOnClickListener {
+            binding.animeSearchBarText.performClick()
+        }
+
+
+
 
         animePageAdapter.onSeasonClick = { i ->
             scope.launch(Dispatchers.IO) {
@@ -258,9 +277,9 @@ class AnimeFragment : Fragment() {
             if (it) {
                 scope.launch {
                     withContext(Dispatchers.IO) {
-                        getUserId(requireContext()) {
-                            load()
-                        }
+//                        getUserId(requireContext()) {
+//                            load()
+//                        }
                         model.loaded = true
                         model.loadTrending(1)
                         model.loadUpdated()

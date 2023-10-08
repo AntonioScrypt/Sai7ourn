@@ -8,6 +8,9 @@
     <color name="nav_tab">#40ffffff</color>
     <color name="nav_tab_disabled">#40ffffff</color>
     <color name="status">#54000000</color>
-    <color name="nav_status">#80000000</color>
+    <color name="nav_status">#7F6EAC</color>
     <color name="filler">#29FF6B08</color>
+
+    <color name="middle_purple">#A16D94</color>
+    <color name="middle_blue_purple">#594D78</color>
 </resources>

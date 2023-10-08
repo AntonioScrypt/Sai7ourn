@@ -23,12 +23,54 @@
             tools:listitem="@layout/item_anime_page" />
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom|center_horizontal">-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/animeSearchBar"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="wrap_content"
+            android:minWidth="150dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="32dp"
+            android:hint="@string/anime"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="bottom|end"
+            android:textColorHint="@color/bg_opp"
+            android:transitionName="@string/search"
+            app:boxBackgroundColor="@color/bg"
+            app:boxCornerRadiusBottomEnd="28dp"
+            app:boxCornerRadiusBottomStart="28dp"
+            app:boxCornerRadiusTopEnd="28dp"
+            app:boxCornerRadiusTopStart="28dp"
+            app:endIconDrawable="@drawable/ic_round_search_24"
+            app:endIconTint="@color/bg_opp"
+            app:hintAnimationEnabled="true">
+
+            <AutoCompleteTextView
+                android:id="@+id/animeSearchBarText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:fontFamily="@font/poppins_bold"
+                android:inputType="none"
+                android:padding="8dp"
+                android:textColor="?android:attr/textColorSecondary"
+                android:textSize="14sp"
+                tools:ignore="LabelFor,TextContrastCheck,SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
     <androidx.cardview.widget.CardView
         android:id="@+id/animePageScrollTop"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:layout_gravity="bottom|center_horizontal"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="80dp"
+        android:layout_marginEnd="32dp"
+        android:layout_gravity="bottom|end"
         app:cardBackgroundColor="@color/nav_bg"
         app:cardCornerRadius="24dp"
         app:contentPadding="12dp">
@@ -41,5 +83,5 @@
             app:tint="?attr/colorOnSurface"
             tools:ignore="ContentDescription" />
     </androidx.cardview.widget.CardView>
-
+<!--    </LinearLayout>-->
 </FrameLayout>
