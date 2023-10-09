@@ -143,7 +143,7 @@
     <string name="auto_select_server">Auto Selecting Server</string>
     <string name="make_default">Make Default</string>
     <string name="filler">Filler</string>
-    <string name="adult">Adult</string>
+    <string name="adult">+18</string>
     <string name="list_only">List Only</string>
     <string name="tag">Tag</string>
     <string name="tags">Tags</string>

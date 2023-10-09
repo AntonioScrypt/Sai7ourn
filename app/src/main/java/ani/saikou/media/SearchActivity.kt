@@ -148,6 +148,8 @@ class SearchActivity : AppCompatActivity() {
                 if(intent.getBooleanExtra("search",false)) search()
             }
         }
+        progressAdapter.bar?.visibility = View.VISIBLE
+        search()
     }
 
     private var searchTimer = Timer()
