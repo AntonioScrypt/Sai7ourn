@@ -4,6 +4,6 @@
         <item name="colorPrimary">@color/middle_purple</item>
         <item name="colorOnPrimary">@color/bg_black</item>
         <item name="android:textColor">@color/bg_white</item>
-        <item name="colorSecondaryVariant">@color/middle_blue_purple</item>
+        <item name="colorSecondaryVariant">@color/topaz</item>
     </style>
 </resources>

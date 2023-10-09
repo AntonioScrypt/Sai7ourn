@@ -73,11 +73,12 @@
                                     android:fontFamily="@font/poppins_bold"
                                     android:gravity="center"
                                     android:text="@string/username"
-                                    android:textSize="16sp" />
+                                    android:textSize="17sp" />
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
+                                    android:layout_marginTop="5dp"
                                     android:orientation="horizontal">
 
                                     <TextView
@@ -101,6 +102,7 @@
                                 <LinearLayout
                                     android:layout_width="wrap_content"
                                     android:layout_height="match_parent"
+                                    android:layout_marginTop="2dp"
                                     android:orientation="horizontal">
 
                                     <TextView
@@ -169,7 +171,8 @@
                             android:layout_height="72dp"
                             android:layout_margin="8dp"
                             android:visibility="invisible"
-                            app:cardCornerRadius="16dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="10dp"
                             app:layout_constrainedWidth="true"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toStartOf="@+id/homeMangaList"
@@ -209,10 +212,10 @@
                                     android:textSize="16sp" />
 
                                 <View
-                                    android:layout_width="64dp"
+                                    android:layout_width="70dp"
                                     android:layout_height="2dp"
                                     android:layout_gravity="center"
-                                    android:background="?attr/colorPrimary" />
+                                    android:background="?attr/colorSecondaryVariant" />
                             </LinearLayout>
                         </com.google.android.material.card.MaterialCardView>
 
@@ -223,7 +226,8 @@
                             android:layout_margin="8dp"
                             android:layout_marginBottom="16dp"
                             android:visibility="invisible"
-                            app:cardCornerRadius="16dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="10dp"
                             app:layout_constrainedWidth="true"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
@@ -263,10 +267,10 @@
                                     android:textSize="16sp" />
 
                                 <View
-                                    android:layout_width="64dp"
+                                    android:layout_width="70dp"
                                     android:layout_height="2dp"
                                     android:layout_gravity="center"
-                                    android:background="?attr/colorPrimary" />
+                                    android:background="?attr/colorSecondaryVariant" />
                             </LinearLayout>
 
                         </com.google.android.material.card.MaterialCardView>
@@ -281,6 +285,7 @@
                 android:id="@+id/homeContinueWatchingContainer"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
                 android:orientation="vertical"
                 android:visibility="gone">
 
@@ -352,11 +357,12 @@
                         tools:orientation="horizontal" />
                 </FrameLayout>
             </LinearLayout>
-            
+
             <LinearLayout
                 android:id="@+id/homeFavAnimeContainer"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
                 android:orientation="vertical"
                 android:visibility="gone">
 
@@ -431,6 +437,7 @@
                 android:id="@+id/homePlannedAnimeContainer"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
                 android:orientation="vertical"
                 android:visibility="gone">
 
@@ -681,7 +688,8 @@
                         android:layout_height="250dp"
                         android:gravity="center"
                         android:orientation="vertical"
-                        android:visibility="gone">
+                        android:visibility="gone"
+                        tools:ignore="TooManyViews">
 
                         <ImageView
                             android:layout_width="match_parent"
@@ -728,12 +736,13 @@
                         tools:orientation="horizontal" />
                 </FrameLayout>
             </LinearLayout>
-            
+
             <LinearLayout
                 android:id="@+id/homeRecommendedContainer"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
+                android:layout_marginTop="15dp"
                 android:visibility="gone">
 
                 <TextView

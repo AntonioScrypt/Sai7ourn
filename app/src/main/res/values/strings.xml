@@ -338,9 +338,9 @@
     <string name="year">Year</string>
     <string name="apply">Apply</string>
     <string name="cancel">Cancel</string>
-    <string name="actual_season">Actual Season</string>
-    <string name="next_season">Next Season</string>
-    <string name="previous_season">Previous Season</string>
+    <string name="actual_season">Actual</string>
+    <string name="next_season">Next</string>
+    <string name="previous_season">Previous</string>
     <string name="include_media_in_list">Include List</string>
     <string name="release_calendar">Calendar</string>
     <string name="planned_anime">Planned Anime</string>
@@ -621,5 +621,6 @@
     <string name="warning">Warning</string>
     <string name="view_anime">View Anime</string>
     <string name="view_manga">View Manga</string>
+    <string name="look_by_season">Look by Season</string>
 
 </resources>

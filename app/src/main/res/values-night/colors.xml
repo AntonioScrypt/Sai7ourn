@@ -4,12 +4,14 @@
     <color name="fg">#A8EEEEEE</color>
     <color name="bg_opp">@color/bg_white</color>
     <color name="nav_bg">#1C1C1C</color>
-    <color name="nav_bg_inv">#001C1C1C</color>
+    <color name="nav_bg_inv">#C91C1C1C</color>
     <color name="nav_tab">#40ffffff</color>
     <color name="nav_tab_disabled">#40ffffff</color>
     <color name="status">#54000000</color>
     <color name="nav_status">#7F6EAC</color>
     <color name="filler">#29FF6B08</color>
+
+    <color name="text_def">#CDFFFFFF</color>
 
     <color name="middle_purple">#A16D94</color>
     <color name="middle_blue_purple">#594D78</color>
