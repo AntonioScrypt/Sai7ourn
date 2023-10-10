@@ -33,6 +33,9 @@ class CalendarActivity : AppCompatActivity() {
         window.statusBarColor = ContextCompat.getColor(this, R.color.nav_bg)
         binding.listTitle.setText(R.string.release_calendar)
         binding.listSort.visibility = View.GONE
+        binding.listclose.setOnClickListener {
+            onBackPressedDispatcher.onBackPressed()
+        }
 
         binding.listTabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
             override fun onTabSelected(tab: TabLayout.Tab?) {

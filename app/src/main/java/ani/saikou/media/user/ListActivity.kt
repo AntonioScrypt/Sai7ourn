@@ -31,7 +31,11 @@ class ListActivity : AppCompatActivity() {
 
         window.statusBarColor = ContextCompat.getColor(this, R.color.nav_bg)
         val anime = intent.getBooleanExtra("anime", true)
-        binding.listTitle.text = intent.getStringExtra("username") + "'s " + (if (anime) "Anime" else "Manga") + " List"
+        binding.listTitle.text = "My " + (if (anime) "Anime" else "Manga") + " List"
+
+        binding.listclose.setOnClickListener {
+            onBackPressedDispatcher.onBackPressed()
+        }
 
         binding.listTabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
             override fun onTabSelected(tab: TabLayout.Tab?) {
