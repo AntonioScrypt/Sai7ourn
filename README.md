@@ -2,10 +2,15 @@
 
 You know what this is.
 
-*Manga section don´t work, only can see
-*Anime section its working just in english (GOGO) and spanish (JKAnime, Monoschinos2)
-*not working dub anime (disabled)
-*redesign of anime layout and sub-interfaces 
+
+
+* Manga section don´t work, only can see.
+
+* Anime section its working just in english (GOGO) and spanish (JKAnime, Monoschinos2)
+
+* not working dub anime (disabled)
+
+* redesign of anime layout and sub-interfaces 
 
 ## DISCLAIMER
 
