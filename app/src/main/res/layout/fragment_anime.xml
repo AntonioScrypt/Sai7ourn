@@ -45,7 +45,7 @@
             app:boxCornerRadiusBottomStart="28dp"
             app:boxCornerRadiusTopEnd="28dp"
             app:boxCornerRadiusTopStart="28dp"
-            app:endIconDrawable="@drawable/ic_round_search_24"
+            app:endIconDrawable="@drawable/iconmonstr_search_thin"
             app:endIconTint="@color/bg_opp"
             app:hintAnimationEnabled="true">
 

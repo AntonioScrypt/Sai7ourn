@@ -1,9 +1,16 @@
 <resources>
+
     <style name="Theme.Saikou" parent="Theme.Base">
         <item name="android:statusBarColor">@color/status</item>
-        <item name="colorPrimary">@color/middle_purple</item>
-        <item name="colorOnPrimary">@color/bg_black</item>
         <item name="android:textColor">@color/bg_white</item>
-        <item name="colorSecondaryVariant">@color/topaz</item>
+
+        <!--        BASE COLORS-->
+        <item name="colorPrimary">@color/Cherry_blossom_pink</item>
+        <item name="colorPrimaryVariant">@color/kobi</item>
+        <item name="colorOnPrimary">@color/Champagne_pink</item>
+        <item name="colorSecondary">@color/Ash_gray</item>
+        <item name="colorSecondaryVariant">@color/Timberwolf</item>
+        <item name="colorOnSecondary">@color/Outer_space</item>
+
     </style>
 </resources>

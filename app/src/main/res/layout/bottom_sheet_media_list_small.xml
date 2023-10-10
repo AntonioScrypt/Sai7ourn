@@ -39,6 +39,7 @@
                 android:fontFamily="@font/poppins"
                 android:gravity="center_vertical"
                 android:text="@string/list_editor"
+                android:textColor="?attr/colorOnSecondary"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 

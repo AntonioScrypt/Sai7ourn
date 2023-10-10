@@ -37,12 +37,12 @@
             android:padding="8dp"
             android:translationZ="12dp"
             android:visibility="gone"
-
+            app:abb_rippleEnabled="true"
+            app:abb_rippleColor="?attr/colorOnPrimary"
             app:abb_animationDuration="300"
             app:abb_animationInterpolator="@anim/over_shoot"
-            app:abb_badgeBackgroundColor="#F44336"
-
-            app:abb_indicatorColor="?attr/colorSecondary"
+            app:abb_badgeBackgroundColor="@color/design_default_color_secondary"
+            app:abb_indicatorColor="?attr/colorSecondaryVariant"
             app:abb_indicatorLocation="bottom"
             app:abb_indicatorMargin="28dp"
             app:abb_selectedTabType="text"

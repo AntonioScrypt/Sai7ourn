@@ -40,8 +40,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:translationZ="8dp"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="4dp">
+                app:cardCornerRadius="10dp"
+                app:cardElevation="8dp">
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/itemCompactImage"
@@ -96,7 +96,7 @@
                 android:alpha="0.8"
                 android:translationZ="8dp"
                 app:cardCornerRadius="8dp"
-                app:cardElevation="4dp">
+                app:cardElevation="8dp">
 
                 <View
                     android:layout_width="match_parent"
@@ -121,13 +121,13 @@
             <LinearLayout
                 android:id="@+id/itemCompactTitleContainer"
                 android:layout_width="match_parent"
-                android:layout_height="118dp"
+                android:layout_height="138dp"
                 android:orientation="vertical"
                 android:paddingBottom="8dp">
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="48dp" />
+                    android:layout_height="38dp" />
 
                 <TextView
                     android:id="@+id/itemCompactTitle"
@@ -150,7 +150,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginTop="4dp"
+                    android:layout_marginTop="8dp"
                     android:orientation="horizontal">
 
                     <TextView

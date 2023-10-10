@@ -20,7 +20,7 @@
         android:text="@string/filter"
         android:textAlignment="center"
         android:textSize="20sp"
-        app:drawableStartCompat="@drawable/ic_round_filter_alt_24" />
+        app:drawableStartCompat="@drawable/iconmonstr_filter_thin" />
 
     <LinearLayout
         android:layout_width="match_parent"

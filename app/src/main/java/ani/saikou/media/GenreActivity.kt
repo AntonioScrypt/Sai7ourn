@@ -29,6 +29,10 @@ class GenreActivity : AppCompatActivity() {
         setContentView(binding.root)
         initActivity(this)
 
+        binding.studioClose.setOnClickListener {
+            onBackPressedDispatcher.onBackPressed()
+        }
+
         binding.genreContainer.updateLayoutParams<ViewGroup.MarginLayoutParams> { topMargin += statusBarHeight;bottomMargin += navBarHeight }
         val screenWidth = resources.displayMetrics.run { widthPixels / density }
         val type = intent.getStringExtra("type")

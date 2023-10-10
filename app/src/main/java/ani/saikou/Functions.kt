@@ -636,8 +636,8 @@ fun countDown(media: Media, view: ViewGroup) {
                     R.string.time_format,
                     a / 86400,
                     a % 86400 / 3600,
-                    a % 86400 % 3600 / 60,
-                    a % 86400 % 3600 % 60
+                    a % 86400 % 3600 / 60
+                    //a % 86400 % 3600 % 60
                 )
             }
 

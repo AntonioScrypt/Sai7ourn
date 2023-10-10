@@ -63,7 +63,8 @@
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:layout_gravity="center"
-            android:src="@drawable/ic_round_close_24"
+            android:src="@drawable/iconmonstr_x_mark_3"
+            app:tint="?attr/colorOnSecondary"
             tools:ignore="ContentDescription" />
     </androidx.cardview.widget.CardView>
 

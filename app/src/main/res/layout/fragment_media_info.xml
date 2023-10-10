@@ -124,6 +124,8 @@
                             android:textAlignment="textEnd" />
                     </TableRow>
 
+
+
                     <TableRow
                         android:id="@+id/mediaInfoDurationContainer"
                         android:layout_width="match_parent"

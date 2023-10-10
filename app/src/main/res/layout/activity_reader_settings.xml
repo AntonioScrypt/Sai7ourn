@@ -373,8 +373,8 @@
                         android:alpha="0.33"
                         android:background="?android:attr/selectableItemBackground"
                         android:scaleX="-1"
-                        android:src="@drawable/ic_round_close_24"
-                        app:tint="@color/bg_opp"
+                        android:src="@drawable/iconmonstr_x_mark_3"
+                        app:tint="?attr/colorOnSecondary"
                         tools:ignore="ContentDescription,SpeakableTextPresentCheck,ImageContrastCheck" />
                 </androidx.cardview.widget.CardView>
 

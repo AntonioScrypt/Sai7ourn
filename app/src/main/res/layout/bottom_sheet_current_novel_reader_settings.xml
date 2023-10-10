@@ -159,7 +159,7 @@
                     android:alpha="0.33"
                     android:background="?android:attr/selectableItemBackground"
                     android:scaleX="-1"
-                    android:src="@drawable/ic_round_close_24"
+                    android:src="@drawable/iconmonstr_x_mark_3"
                     app:tint="@color/bg_opp"
                     tools:ignore="ContentDescription,SpeakableTextPresentCheck,ImageContrastCheck" />
             </androidx.cardview.widget.CardView>
@@ -503,7 +503,7 @@
             android:elegantTextHeight="true"
             android:fontFamily="@font/poppins_bold"
             android:minHeight="64dp"
-            android:text="Use Dark Theme"
+            android:text="@string/use_dark_theme"
             android:textAlignment="viewStart"
             android:textColor="@color/bg_opp"
             app:cornerRadius="0dp"

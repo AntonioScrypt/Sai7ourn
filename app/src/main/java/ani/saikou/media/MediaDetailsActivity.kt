@@ -31,15 +31,15 @@ import ani.saikou.R
 import ani.saikou.Refresh
 import ani.saikou.ZoomOutPageTransformer
 import ani.saikou.connections.anilist.Anilist
-import ani.saikou.media.anime.AnimeWatchFragment
 import ani.saikou.copyToClipboard
 import ani.saikou.databinding.ActivityMediaBinding
 import ani.saikou.initActivity
 import ani.saikou.loadData
 import ani.saikou.loadImage
+import ani.saikou.media.anime.AnimeWatchFragment
 import ani.saikou.media.manga.MangaReadFragment
-import ani.saikou.navBarHeight
 import ani.saikou.media.novel.NovelReadFragment
+import ani.saikou.navBarHeight
 import ani.saikou.openLinkInBrowser
 import ani.saikou.others.ImageViewDialog
 import ani.saikou.others.getSerialized

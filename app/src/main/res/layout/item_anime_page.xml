@@ -122,21 +122,26 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
                 android:text="@string/previous_season"
+                app:rippleColor="?attr/colorOnPrimary"
                 android:textAlignment="center" />
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/animeThisSeason"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
+                android:padding="10dp"
                 android:text="@string/actual_season"
+                app:rippleColor="?attr/colorOnPrimary"
                 android:textAlignment="center" />
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/animeNextSeason"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:padding="10dp"
                 android:text="@string/next_season"
+                app:rippleColor="?attr/colorOnPrimary"
                 android:textAlignment="center"/>
 
         </LinearLayout>
@@ -200,7 +205,7 @@
                     android:layout_width="70dp"
                     android:layout_height="2dp"
                     android:layout_gravity="center"
-                    android:background="?attr/colorSecondaryVariant" />
+                    android:background="?attr/colorSecondary" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
@@ -252,7 +257,7 @@
                     android:layout_width="70dp"
                     android:layout_height="2dp"
                     android:layout_gravity="center"
-                    android:background="?attr/colorSecondaryVariant" />
+                    android:background="?attr/colorSecondary" />
             </LinearLayout>
 
         </com.google.android.material.card.MaterialCardView>
