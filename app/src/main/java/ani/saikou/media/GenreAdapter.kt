@@ -23,7 +23,7 @@ class GenreAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GenreViewHolder {
         val binding = ItemGenreBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        if (big) binding.genreCard.updateLayoutParams { height = 72f.px }
+        if (big) binding.genreCard.updateLayoutParams { height = 85f.px }
         return GenreViewHolder(binding)
     }
 

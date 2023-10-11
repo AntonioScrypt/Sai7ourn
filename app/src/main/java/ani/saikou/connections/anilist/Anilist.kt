@@ -10,7 +10,7 @@ import ani.saikou.currContext
 import ani.saikou.openLinkInBrowser
 import ani.saikou.tryWithSuspend
 import java.io.File
-import java.util.*
+import java.util.Calendar
 
 object Anilist {
     val query: AnilistQueries = AnilistQueries()
@@ -78,7 +78,7 @@ object Anilist {
     )
 
     fun loginIntent(context: Context) {
-        val clientID = 6818
+        val clientID = 14842
         try {
             CustomTabsIntent.Builder().build().launchUrl(
                 context,

@@ -2,13 +2,13 @@ package ani.saikou.connections.anilist
 
 import android.app.Activity
 import ani.saikou.R
+import ani.saikou.checkGenreTime
+import ani.saikou.checkId
 import ani.saikou.connections.anilist.Anilist.authorRoles
 import ani.saikou.connections.anilist.Anilist.executeQuery
 import ani.saikou.connections.anilist.api.FuzzyDate
 import ani.saikou.connections.anilist.api.Page
 import ani.saikou.connections.anilist.api.Query
-import ani.saikou.checkGenreTime
-import ani.saikou.checkId
 import ani.saikou.currContext
 import ani.saikou.loadData
 import ani.saikou.logError
@@ -78,20 +78,20 @@ class AnilistQueries {
                             }
                         }
 
-                        media.trailer = fetchedMedia.trailer?.let { i ->
-                            if (i.site != null && i.site.toString() == "youtube")
-                                "https://www.youtube.com/embed/${i.id.toString().trim('"')}"
-                            else null
-                        }
-
-                        fetchedMedia.synonyms?.apply {
-                            media.synonyms = arrayListOf()
-                            this.forEach { i ->
-                                media.synonyms.add(
-                                    i
-                                )
-                            }
-                        }
+//                        media.trailer = fetchedMedia.trailer?.let { i ->
+//                            if (i.site != null && i.site.toString() == "youtube")
+//                                "https://www.youtube.com/embed/${i.id.toString().trim('"')}"
+//                            else null
+//                        }
+//
+//                        fetchedMedia.synonyms?.apply {
+//                            media.synonyms = arrayListOf()
+//                            this.forEach { i ->
+//                                media.synonyms.add(
+//                                    i
+//                                )
+//                            }
+//                        }
 
                         fetchedMedia.tags?.apply {
                             media.tags = arrayListOf()

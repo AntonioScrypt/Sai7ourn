@@ -393,27 +393,27 @@ OS Version: $CODENAME $RELEASE ($SDK_INT)
         }
 
 
-        binding.settingsCheckUpdate.isChecked = loadData("check_update") ?: true
-        binding.settingsCheckUpdate.setOnCheckedChangeListener { _, isChecked ->
-            saveData("check_update", isChecked)
-            if (!isChecked) {
-                snackString(getString(R.string.long_click_to_check_update))
-            }
-        }
+//        binding.settingsCheckUpdate.isChecked = loadData("check_update") ?: true
+//        binding.settingsCheckUpdate.setOnCheckedChangeListener { _, isChecked ->
+//            saveData("check_update", isChecked)
+//            if (!isChecked) {
+//                snackString(getString(R.string.long_click_to_check_update))
+//            }
+//        }
 
-        binding.settingsLogo.setOnLongClickListener {
-            lifecycleScope.launch(Dispatchers.IO) {
-                AppUpdater.check(this@SettingsActivity, true)
-            }
-            true
-        }
+//        binding.settingsLogo.setOnLongClickListener {
+//            lifecycleScope.launch(Dispatchers.IO) {
+//                AppUpdater.check(this@SettingsActivity, true)
+//            }
+//            true
+//        }
 
-        binding.settingsCheckUpdate.setOnLongClickListener {
-            lifecycleScope.launch(Dispatchers.IO) {
-                AppUpdater.check(this@SettingsActivity, true)
-            }
-            true
-        }
+//        binding.settingsCheckUpdate.setOnLongClickListener {
+//            lifecycleScope.launch(Dispatchers.IO) {
+//                AppUpdater.check(this@SettingsActivity, true)
+//            }
+//            true
+//        }
 
         binding.settingsAccountHelp.setOnClickListener {
             val title = getString(R.string.account_help)
